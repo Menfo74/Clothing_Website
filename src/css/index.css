@@ -1,0 +1,542 @@
+body {
+    background-color: #000000;
+    font-family: Copperplate, "Copperplate Gothic Light", fantasy;    font-weight: 100;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body takes at least the full height of the viewport */
+    margin: 0;
+    padding: 0;
+    position: relative;
+    color: #000000;
+}
+
+
+
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-image {
+    max-width: 700px;
+    height: auto;
+}
+
+main {
+    flex: 1;
+}
+
+.footer {
+    text-align: center;
+    background-color: black;
+    padding: 10px 0;
+}
+.contact-form{
+    margin: 50px;
+
+
+}
+
+
+.image-container {
+    position: fixed;
+    text-align: center;
+}
+
+/* Style for the image */
+.image-container img {
+    width: 100px;
+    height: auto;
+} 
+
+.image-container img.transparent-background {
+    width: 100%;
+    height: auto;
+    background-color: transparent; /* Ensure the background is treated as transparent */
+}
+
+.content-wrapper {
+    flex: 1; /* Allow the content wrapper to grow and take available space */
+}
+
+.banner {
+    background-color: #824646;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top: 0; /* Stick the banner to the top of the page */
+}
+
+.banner a {
+    color: #fff6f6;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    margin: 0 0.5em;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.banner a:hover {
+    background-color: #fff;
+    color: #000000;
+}
+
+h1 {
+    margin: 0;
+    display: inline-block;
+    text-align: left;
+}
+
+body::before {
+    content: "";
+    /*background-image: url(img/hero.jpg);*/
+    background-color: #000000;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: fixed;
+    top: 0; 
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+header {
+    background-color: #000000;
+    color: #fff;
+    padding: 0;
+    margin-inline: 60;
+    display: inline-block; /* Align with the navigation links */
+    
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block; /* Align with the navigation links */
+    font-size: 2em;
+    margin-left: 100px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #000000;
+    color: white;
+  }
+
+  .search-container {
+    display: flex;
+    align-items: center;
+  }
+
+  #searchInput {
+    padding: 4px;
+    font-size: 16px;
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+  }
+  
+  .nav-links {
+    display: flex;
+    align-items: center;
+  }
+
+
+
+
+main {
+    background-color: #000000;
+    color: #fffcfc;
+    padding: 2em;
+    margin-top: 40px;
+    margin-bottom: 0;
+}
+
+section {
+margin-left: 50px ;
+margin-right: 50px ;
+margin-bottom: 2em;
+}
+
+/* Featured Clothes Section Styles */
+.featured-clothes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/*
+.clothing-item {
+    max-width: 300px;
+    margin: 0.5em;
+    padding: 1em;
+    background-color: #870000;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+*/
+
+.clothing-item img {
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+.clothing-item img.transparent-background {
+    width: 100%;
+    height: auto;
+    background-color: transparent; /* Ensure the background is treated as transparent */
+}
+
+/* Shopping Cart Styles */
+#cart {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1em;
+}
+
+.copyright {
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 0.5em 0;
+    position: fixed;
+    bottom: 0; 
+    width: 100%; /
+}
+
+.copyright a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    margin: 0 0.5em;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.copyright a:hover {
+    background-color: black;
+    color: #000000;
+}
+
+.signup-container {
+    text-align: center;
+    padding: 2em;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: 2em auto;
+    max-width: 400px;
+}
+
+.login-container {
+    color:#000000;
+    text-align: center;
+    padding: 2em;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: 2em auto;
+    max-width: 400px;
+}
+
+.login-container form {
+    color:#000000;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.login-container button {
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    padding: 0.5em;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.login-container button:hover {
+    background-color: #000000;
+}
+
+/* Additional Styles for Show Password Checkbox */
+.show-password {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.show-password input {
+    margin-right: 0.5em;
+}
+
+
+
+.clothing-item:hover {
+    transform: scale(1.05);
+}
+
+.clothing-item img {
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+.price {
+    color: #000000;
+    font-weight: bold;
+}
+
+button {
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1em;
+}
+
+button:hover {
+    background-color: #000000;
+}
+
+.newsflash-container {
+    overflow: hidden;
+    background-color: #000000;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.newsflash-wrapper {
+    white-space: nowrap;
+    animation: scrollNewsflash 20s linear infinite;
+    display: flex;
+}
+
+.newsflash {
+    flex-shrink: 0;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    font-size: 18px;
+    margin-right: 20px;
+}
+
+@keyframes scrollNewsflash {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.bn3 {
+    display: inline-block;
+    padding: 0.5em 1.7em;
+    margin: 0 0.1em 0.1em 0;
+    border: 0.16em solid rgb(255, 255, 255);
+    border-radius: 2em;
+    box-sizing: border-box;
+    text-decoration: none;
+
+    font-weight: 300;
+    color: #ffffff;
+    text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.253);
+    text-align: center;
+    transition: all 0.2s;
+}
+  
+.bn3:hover {
+    color: black;
+    background-color: rgb(255, 255, 255);
+}
+
+
+.signup-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.signup-container button {
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    padding: 0.5em;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.signup-container button:hover {
+    background-color: #555;
+}
+
+/* Additional Styles for Show Password Checkbox */
+.show-password {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.show-password input {
+    margin-right: 0.5em;
+}
+
+.terms-container {
+    
+    color: #fff;
+    max-width: 700px;
+    margin-top: auto ;
+    padding: 50px;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*first version for NAV
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    color: white;
+
+    background-color: #000000;
+    text-align: center;
+    margin: 0;  Added to reset margin 
+}
+
+search-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  #searchInput {
+    padding: 8px;
+    font-size: 16px;
+  }
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1em;
+}
+*/
+
+
+
+
+.image-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(171, 58, 58); 
+    text-decoration: none;
+}
+
+.image-caption img.transparent-background {
+    width: 100%;
+    height: auto;
+    background-color: transparent;  
+}
+
+
+
+
+
+
+/*
+#welcome {
+    text-align: center;
+    padding: 2em;
+    background: linear-gradient(to bottom, #e6f7ff, #b3e0ff);  Gradient background 
+    border-bottom: 1px solid #99c2ff; /* Border color adjusted to match gradient 
+}
+
+#welcome h2 {
+    color: #000000; Dark blue color for heading
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+#welcome p {
+    color: #000000; Slightly lighter blue color for paragraph 
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+*/
+
+/*
+.hero-image {
+    width: 100%;
+    overflow: hidden;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+*/
+
+/*first version for NAV
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    color: white;
+
+    background-color: #000000;
+    text-align: center;
+    margin: 0;  Added to reset margin 
+}
+
+search-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  #searchInput {
+    padding: 8px;
+    font-size: 16px;
+  }
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1em;
+}
+*/
