@@ -1,6 +1,6 @@
-# Clothing Website Enhancement
+# Clothing Website
 
-This repository contains an enhanced version of the original Clothing Website project.
+This repository contains Clothing Website project.
 
 ## Structure
 - **src/**: Contains the main source code for the project.
